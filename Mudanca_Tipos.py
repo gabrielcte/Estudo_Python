@@ -1,3 +1,11 @@
+'''
+Gabriel Alves Silva
+https://github.com/gabrielcte/Estudo_Python/blob/main/Mudanca_Tipos.py
+Os dados podem vir de varias formas, é importante saber modificar seus tipo para o uso.
+Segue os exercícios.
+'''
+
+# Rotina
 idade = input("Informe a sua idade:")
 print(idade, type(idade))
 
