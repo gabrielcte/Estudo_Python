@@ -52,7 +52,7 @@ print (a+1, b+1)
 
 #Podemos fazer operações com variáveis não inteiras
 nome = input('Digite seu primeiro nome:')
-nome = nome + ' Schmitt'
+nome = 'Mestre '+nome
 print(nome)
 
 comparacao1 = 5 > 3
