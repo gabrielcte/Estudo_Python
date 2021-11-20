@@ -1,3 +1,11 @@
+'''
+Gabriel Alves Silva
+https://github.com/gabrielcte/Estudo_Python/blob/main/Mudanca_Fluxo_While.py
+O While é um loop dentro do código, útil para preencher/modificar/contabilizar... vetores e listas, e fazer calculos repetitivos.
+Segue os exércicios:
+'''
+
+# Rotina
 contador = 0
 while contador < 10:
     contador = contador + 1
