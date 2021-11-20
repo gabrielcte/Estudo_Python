@@ -1,3 +1,11 @@
+'''
+Gabriel Alves Silva
+https://github.com/gabrielcte/Estudo_Python/blob/main/Listas_e_Tuplas.py
+Listas e Tuplas, são as formas mais comuns de armazenar e manipular dados.
+Segue uns exercícios:
+'''
+
+# Rotina
 nomes_paises = ['Brasil', 'Argetina', 'China', 'Canada', 'Japão']
 print(nomes_paises)
 print("Tamanho da lista", len(nomes_paises))
@@ -47,7 +55,7 @@ listavazia = []
 numeros = [1, 3, 7, 8, 9]
 
 # Listas podem mesclar diferentes tipos de valores.
-listamista = [14, "let's code", 0.1, True]
+listamista = [14, "let's fight", 0.1, True]
 
 # Acessamos cada elemento da lista através de um índice entre colchetes.
 # Os índices começam em 0.
