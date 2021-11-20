@@ -33,22 +33,19 @@ temperature = data.loc[start_date:end_date, 'Temperature']
 load = data.loc[start_date:end_date, 'Load']
 
 # Write your code here
-print("Resposta Questão 7")
-print()
-print("a)")
-print("i.")
+print("Analisando Dados")
+
 print("Primeiro Quartil",+ primeiro_quartil(temperature))
 print("Terceiro Quartil",+ terceiro_quartil(temperature))
 
 limite_superior_temperatura = limite_superior(temperature)
 limite_inferior_temperatura = limite_inferior(temperature)
 
-print("ii.")
 print("IQR",+ alcance_inter_quartil(temperature))
-print("iii.")
+
 print("UB",+ limite_superior_temperatura)
 print("LB",+ limite_inferior_temperatura)
-print("iv.")
+
 print("Não existe índice com exato valor do UP e LB")
 
 temperature[temperature > limite_superior_temperatura].index
@@ -58,10 +55,9 @@ media = sum(temperature)
 desviopadrao = np.std(temperature)
 
 print()
-print("b)")
 print("Criado nova série de temperatura")
 print("substituido os outliers pelos valores dos limites inferiores LB ou superiores UB.")
-print("verificar value temperature")
+print("verificar valor temperature")
 print("Média",+media)
 print("Desvio Padrão",+desviopadrao)
 
@@ -73,7 +69,6 @@ temperature_new.rolling(7).mean()
 load.rolling(7).mean()
 
 print()
-print("c)")
 print("Gerado Série temporal de 7 Dias")
 print("Entre 25/12/2020 e 31/12/2021")
 
@@ -101,7 +96,6 @@ df = pd.DataFrame({'Load': [z[0],z[1],z[2],z[3],z[4],z[5],z[6]]},
                            pd.Timestamp('20210106'),
                            pd.Timestamp('20210107')])
 print()
-print("e)")
-print("alores de carga de 01/01/2021 a 07/01/2021 são")
+print("Valores de carga de 01/01/2021 a 07/01/2021 são")
 print(df)
 
