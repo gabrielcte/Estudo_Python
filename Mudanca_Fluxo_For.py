@@ -1,3 +1,12 @@
+'''
+Gabriel Alves Silva
+https://github.com/gabrielcte/Estudo_Python/blob/main/Mudanca_Fluxo_For.py
+Apesar do while, algumas vezes é mais contratil usar o for para as mudanças de fluxo
+ainda mais quando se usa listas. Segue os códigos dos exercícios.
+'''
+
+# Rotina
+#Exemplo de como o for é mais reduzido que o while
 nomes_cidades = ['São Paulo', 'Londres', 'Toquio', 'Paris']
 for nome in nomes_cidades:
     print(nome)
@@ -31,12 +40,12 @@ print(list(range(2,10,2)))
 fib = [1, 1, 2, 3, 5, 8, 13]
 for elemento in fib:
     print(elemento)
+    
 # Com 1 parâmetro, ele será interpretado como valor final (exclusivo).
 # O valor inicial será 0 e o incremento será 1.
-
+# este exemplo imprime os números de 0 a 9, de um em um
 for numero in range(10):
     print(numero)
-    # este exemplo imprime os números de 0 a 9, de um em um
 
 # Com 2 parâmetros, o primeiro será o valor inicial (inclusivo) e o
 # segundo será o final (exclusivo).
