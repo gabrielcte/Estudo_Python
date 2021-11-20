@@ -78,4 +78,3 @@ profissao = "estudante"
 escola = "UFABC"
 
 print(f"{nome} é {profissao} da {escola}.")
-
