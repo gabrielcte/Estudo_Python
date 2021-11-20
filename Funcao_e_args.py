@@ -6,7 +6,6 @@ código.
 '''
 
 # Definindo funções
-
 def hello():
     print('Olá, mundo!')
 
