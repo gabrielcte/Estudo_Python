@@ -1,3 +1,10 @@
+'''
+Gabriel Alves Silva
+https://github.com/gabrielcte/Estudo_Python/blob/main/lendo_escrevendo_txt.py
+Como abrir e utilizar um documento txt com o Python, segue o exercício.
+'''
+
+# Rotina
 arquivo = open('dom_casmurro_cap_1.txt', 'r')
 texto = arquivo.read()
 print(texto)
