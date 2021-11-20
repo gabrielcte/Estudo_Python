@@ -1,20 +1,17 @@
 '''
 Gabriel Alves Silva
-https://github.com/gabrielcte/Aero_Math/blob/main/Attitude_Determination_Triad.m
-TRIAD é um algoritmo de determinação de atitude simples e rápida.
-Essa usa dois vetores em dois sistemas de coordenadas diferentes.
-Os vetores devem ser diferentes.
-ver:
-https://github.com/gabrielcte/Aero-Math/blob/main/teste_triad
+https://github.com/gabrielcte/Estudo_Python/blob/main/Analise_Modelagem_Dados.py
+O trabalho com dados é uma habilidade essencial, segue um dos estudos que fiz
+Usando Pandas para manipulção das planilhas, numpy para operações numericas mais rebuscadas e
+datetime para a modelagem das datas.
 '''
 
-# Import libraries
+# Importando bibliotecas
 import pandas as pd
 import numpy as np
 from datetime import date, datetime as dt
 
 # Definindo funções
-
 def primeiro_quartil(vetor):
     return vetor.quantile(.25)
 
@@ -30,18 +27,18 @@ def limite_inferior(vetor):
 def limite_superior(vetor):
     return terceiro_quartil(vetor) + 1.5 * alcance_inter_quartil(vetor)
 
-# Read data
-
+# Lendo dados
 url_link = 'https://storage.googleapis.com/focus-bi/temperature_load.csv'
 data = pd.read_csv(url_link, sep=';', index_col='Date').dropna(how='all')
 data.index = [dt.strptime(x, "%d/%m/%Y").date() for x in data.index]
-# Get Temperature and Load Data
+
+# Selecionando dados de temperatura e carregamento
 start_date = date(2020, 1, 1)
 end_date = date(2020, 12, 31)
 temperature = data.loc[start_date:end_date, 'Temperature']
 load = data.loc[start_date:end_date, 'Load']
 
-# Write your code here
+# Rotina
 print("Analisando Dados")
 
 print("Primeiro Quartil",+ primeiro_quartil(temperature))
