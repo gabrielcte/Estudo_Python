@@ -1,4 +1,15 @@
+'''
+Gabriel Alves Silva
+https://github.com/gabrielcte/Estudo_Python/blob/main/exemplo_csv.py
+Os CSVs são fundamentais para a transferencia de informação, eles são
+“comma-separated-values”, ou seja um arquivo que os valores são separados por virgulas.
+Segue o exercício:
+'''
+
+# Importando bibliotecas
 import csv
+
+# Rotina
 with open('brasil_covid.csv', 'r') as arquivo_csv:
     leitor = csv.reader(arquivo_csv)
     header = next(leitor)
@@ -37,6 +48,7 @@ with open('users.csv','r') as csv_file:
     csv_reader = csv.reader(csv_file,delimiter=',')
     for row in csv_reader:
         print(row)
+        
 with open('tabelaExemplo.csv', 'w') as arquivo:
     escritor = csv.writer(arquivo, delimiter = ';', lineterminator = '\n') #criando um escritor
     lista = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
@@ -48,7 +60,6 @@ with open('tabelaExemplo.csv', "r") as arquivo:
     print(leitor)
     for linha in leitor:
         print(linha)
-import csv
 
 with open('email.csv', 'r') as emails:
     leitor = csv.DictReader(emails, delimiter=';') #a primeira linha é lida como um cabeçalho
