@@ -29,7 +29,7 @@ print('Fim da repetição do bloco while')
 texto = input('Digite a sua senha: ')
 ##
 contador = 0
-while texto != 'LetsCode':
+while texto != 'BoraCodar!':
     texto = input('Senha invalida: ')
 print("Acesso permitido")
 
