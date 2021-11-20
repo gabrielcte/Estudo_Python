@@ -104,4 +104,3 @@ df = pd.DataFrame({'Load': [z[0],z[1],z[2],z[3],z[4],z[5],z[6]]},
 print()
 print("Valores de carga de 01/01/2021 a 07/01/2021 são")
 print(df)
-
