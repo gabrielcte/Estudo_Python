@@ -1,3 +1,10 @@
+'''
+Gabriel Alves Silva
+https://github.com/gabrielcte/Estudo_Python/blob/main/Operacoes_Basicas.py
+Como fazer operações matemáticas básicas, segue o exercício:
+'''
+
+# Rotina
 x = 50
 y = 2
 print(x + y)
