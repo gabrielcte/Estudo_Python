@@ -1,9 +1,19 @@
+'''
+Gabriel Alves Silva
+https://github.com/gabrielcte/Estudo_Python/blob/main/Analise_Modelagem_Dados.py
+Projeto final do curso. Tive um problema com a biblioteca de imagens, logo seguirá atualizações funcionais.
+'''
+
+# Importando bibliotecas
 import requests as r
 import datetime as dt
 import csv
 from urllib.parse import quote
 from PIL import Image
 from IPython.display import display
+
+# Definindo funções
+
 
 def get_datasets(y, labels):
     if type(y[0]) == list:
@@ -18,7 +28,6 @@ def get_datasets(y, labels):
         return [{
             'label': labels[0],
             'data': y
-
         }]
 
 def set_title(title=''):
@@ -64,10 +73,13 @@ def get_api_qrcode(link):
     return resp.content
 
 
+
+# Lendo dados
 url = 'https://api.covid19api.com/dayone/country/brazil'
 resp = r.get(url)
 print(resp.status_code)
 
+# Rotina
 raw_data = resp.json()
 print(raw_data[0])
 
