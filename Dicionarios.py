@@ -1,3 +1,12 @@
+'''
+Gabriel Alves Silva
+https://github.com/gabrielcte/Estudo_Python/blob/main/Analise_Modelagem_Dados.py
+O trabalho com dados é uma habilidade essencial, segue um dos estudos que fiz
+Usando Pandas para manipulção das planilhas, numpy para operações numericas mais rebuscadas e
+datetime para a modelagem das datas.
+'''
+
+# Rotina
 dados_cidade = {
     'nome': 'São Paulo',
     'estado': 'São Paulo',
